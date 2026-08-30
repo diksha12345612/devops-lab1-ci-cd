@@ -8,6 +8,10 @@ pipeline {
         PORT         = '3000'
     }
 
+    triggers {
+        pollSCM('*/2 * * * *') // Poll Git repo for changes every 2 minutes
+    }
+
     stages {
 
         stage('📥 Checkout') {
