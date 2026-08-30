@@ -95,3 +95,45 @@ docker build -t devops-lab1-app .
 docker run -p 3000:3000 --name devops-lab1-container devops-lab1-app
 ```
 Check health at: `http://localhost:3000/health`
+
+---
+
+## 📷 Stage 7: Evidence Checklist (Screenshots)
+
+To complete the lab verification, capture the following screenshots and save them in the `docs/screenshots/` folder with the specified filenames. They will automatically render below:
+
+### 1. Git Version & Config
+*   **Filename:** `git_version.png`
+*   Command: `git --version; git config user.name; git config user.email`
+*   ![Git Version](./docs/screenshots/git_version.png)
+
+### 2. GitHub Repository Setup
+*   **Filename:** `github_repo.png`
+*   Show that the repository has been created on GitHub and code is successfully pushed.
+*   ![GitHub Repo](./docs/screenshots/github_repo.png)
+
+### 3. Jenkins Dashboard
+*   **Filename:** `jenkins_dashboard.png`
+*   Show the Jenkins homepage showing the list of jobs and the `devops-lab1-pipeline` status.
+*   ![Jenkins Dashboard](./docs/screenshots/jenkins_dashboard.png)
+
+### 4. Successful Pipeline Run (Green Status)
+*   **Filename:** `jenkins_pipeline_success.png`
+*   Show the Pipeline Stage View with all steps checked green (Build #4).
+*   ![Successful Pipeline](./docs/screenshots/jenkins_pipeline_success.png)
+
+### 5. Console Output of Successful Build
+*   **Filename:** `jenkins_console.png`
+*   Show the end of the console log displaying `Finished: SUCCESS`.
+*   ![Jenkins Console](./docs/screenshots/jenkins_console.png)
+
+### 6. GitHub Commit History
+*   **Filename:** `github_commits.png`
+*   Show the commit log on GitHub showing conventional commits (`feat:`, `fix:`, `docs:`).
+*   ![GitHub Commits](./docs/screenshots/github_commits.png)
+
+### 7. Polling/Webhook Trigger Configuration
+*   **Filename:** `jenkins_triggers.png`
+*   Show the triggers section in Jenkins config displaying "Build Triggers" (e.g., Poll SCM).
+*   ![SCM Polling Trigger](./docs/screenshots/jenkins_triggers.png)
+
